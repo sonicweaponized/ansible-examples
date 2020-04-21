@@ -2,12 +2,12 @@
 
 # Switch definitions
 
-sw1-server ansible_host=10.142.56.110
-sw1 ansible_host=10.142.56.11
-core ansible_host=10.142.56.1
+sw1-server ansible_host=XXX.XXX.XXX.XXX
+sw1 ansible_host=XXX.XXX.XXX.XXX
+core ansible_host=XXX.XXX.XXX.XXX
 
 # Server definitions
-tig-stack ansible_host=10.142.56.31
+tig-stack ansible_host=XXX.XXX.XXX.XXX
 
 # Group definitions
 
@@ -34,5 +34,5 @@ tig-stack
 
 [arubaos_2930:vars]
 ansible_user=manager
-ansible_password=Stillborn1
+ansible_password=PASSWORD
 ansible_connection=local

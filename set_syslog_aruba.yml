@@ -4,7 +4,7 @@
   tasks:
     - name: Set syslog server
       aruba_config:
-        lines: logging 10.142.56.210
+        lines: logging XXX.XXX.XXX.XXX
 
     - name: Save running config to startup
       aruba_config:

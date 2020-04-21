@@ -1,1 +1,1 @@
-set system syslog host 10.142.56.210 any any
+set system syslog host XXX.XXX.XXX.XXX any any
