@@ -1,0 +1,22 @@
+---
+ - hosts: linux_ubuntu1804
+   gather_facts: no
+   remote_user: soundscape
+   become: true
+ 
+   tasks:
+ 
+   - name: Add a new user named ansible
+     user:
+          name=ansible
+          password=$6$B8tkEMf13$jdWSNEZ8RmD0cyhNtclDs..QDdKTQG84M8cbORAK6fsMVjh7BNrjFUc0ephYwgmJUbAVVq2JtUw2lGerZwrGb/
+ 
+   - name: Add ansible user to the sudoers
+     copy:
+          dest: "/etc/sudoers.d/ansible"
+          content: "ansible  ALL=(ALL)  NOPASSWD: ALL"
+ 
+   - name: Deploy SSH Key
+     authorized_key: user=ansible
+                     key="{{ lookup('file', '/home/ansible/.ssh/id_rsa.pub') }}"
+                     state=present

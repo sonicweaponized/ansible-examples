@@ -1,0 +1,11 @@
+---
+- hosts: arubaos_2930
+  gather_facts: False
+  tasks:
+    - name: Set syslog server
+      aruba_config:
+        lines: logging 10.142.56.210
+
+    - name: Save running config to startup
+      aruba_config:
+        lines: write memory

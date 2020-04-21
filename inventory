@@ -1,0 +1,38 @@
+# List of devices
+
+# Switch definitions
+
+sw1-server ansible_host=10.142.56.110
+sw1 ansible_host=10.142.56.11
+core ansible_host=10.142.56.1
+
+# Server definitions
+tig-stack ansible_host=10.142.56.31
+
+# Group definitions
+
+[aruba:children]
+arubaos_2930
+
+[arubaos_2930]
+core
+
+[juniper:children]
+juniper_ex2200
+
+[juniper_ex2200]
+sw1
+sw1-server
+
+[linux:children]
+linux_ubuntu1804
+
+[linux_ubuntu1804]
+tig-stack
+
+# Group Variable definitions
+
+[arubaos_2930:vars]
+ansible_user=manager
+ansible_password=Stillborn1
+ansible_connection=local
