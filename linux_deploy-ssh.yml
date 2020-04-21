@@ -9,7 +9,7 @@
    - name: Add a new user named ansible
      user:
           name=ansible
-          password=$6$B8tkEMf13$jdWSNEZ8RmD0cyhNtclDs..QDdKTQG84M8cbORAK6fsMVjh7BNrjFUc0ephYwgmJUbAVVq2JtUw2lGerZwrGb/
+          password=your$$hashedpassword
  
    - name: Add ansible user to the sudoers
      copy:
