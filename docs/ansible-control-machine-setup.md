@@ -1,30 +1,30 @@
 ### 1. Make sure machine is up to date
 
-`apt update`
+- `apt update`
 
-`apt upgrade`
+- `apt upgrade`
 
 
 ### 2. Install python and ansible
 
-`apt install python ansible`
+- `apt install python ansible`
 
 
 ### 3. Create ansible user and ssh keys
 
-`useradd -m -s /bin/bash ansible`
+- `useradd -m -s /bin/bash ansible`
 
-`passwd ansible`
+- `passwd ansible`
 
-`echo  -e 'ansible\tALL=(ALL)\tNOPASSWD:\tALL' > /etc/sudoers.d/ansible`
+- `echo  -e 'ansible\tALL=(ALL)\tNOPASSWD:\tALL' > /etc/sudoers.d/ansible`
 
-`apt install whois`
+- `apt install whois`
 
-`su - ansible`
+- `su - ansible`
 
-`ssh-keygen -t rsa` <-- No passphrase
+- `ssh-keygen -t rsa` <-- No passphrase
 
 
 ### 4. Clone ansible-examples repository
 
-`git clone https://github.com/sonicweaponized/ansible-examples.git`
+- `git clone https://github.com/sonicweaponized/ansible-examples.git`
