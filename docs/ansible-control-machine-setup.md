@@ -5,9 +5,9 @@
 - `apt upgrade`
 
 
-### 2. Install python and ansible
+### 2. Install python, ansible, and sshpass
 
-- `apt install python ansible`
+- `apt install python ansible sshpass`
 
 
 ### 3. Create ansible user and ssh keys
