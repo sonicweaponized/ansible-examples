@@ -2,7 +2,7 @@
 
 - `ansible-playbook build_tig-stack.yml`
 
-- Your output should be:
+- Your output should be similar to:
 
 ```
 ansible@ansible-test:~/ansible-examples$ ansible-playbook build_tig-stack.yml
