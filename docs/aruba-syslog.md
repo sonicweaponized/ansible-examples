@@ -18,7 +18,7 @@
 
 - `ansible-playbook set_syslog_aruba.yml`
 
-- Your output should be:
+- Your output should be similar to:
 
 ```
 ansible@ansible-test:~/ansible-examples$ ansible-playbook set_syslog_aruba.yml
