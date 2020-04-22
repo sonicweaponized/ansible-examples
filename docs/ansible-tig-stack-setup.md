@@ -92,3 +92,40 @@ changed: [tig-stack]
 PLAY RECAP *********************************************************************************************************************************
 tig-stack                  : ok=24   changed=15   unreachable=0    failed=0    skipped=1    rescued=0    ignored=0
 ```
+
+### 2. Setup Grafana Data Source
+
+- Open web browser and go to `http://your.ip.address:3000`
+
+- Login with the default user `admin` with password `admin`
+
+- Change the admin password
+
+- Click add data source
+
+- Click InfluxDB
+
+- In URL field enter: `http://localhost:8086`
+
+- In Database field enter: `telegraf`
+
+- In User filed enter: `itnetwork`
+
+- In Password field enter: `itnetwork`
+
+- Click Save & Test
+
+
+### 3. Setup a Dashboard
+
+- Click Dashboards --> Manage in side bar
+
+- Click Import
+
+- Add the following URL to the Grafana.com Dashboard field: `https://grafana.com/grafana/dashboards/5955`
+
+- Give it a name: tig-stack
+
+- Select the datasource InfuxDB
+
+- Click import
