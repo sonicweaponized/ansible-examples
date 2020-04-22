@@ -12,7 +12,16 @@
 - `apt install ansible`
 
 
-### 3. Create ansible user and ssh keys
+### 3. Install dependencies for Juniper NETCONF connections
+
+- `apt install python-pip`
+
+- `pip install junos-eznc`
+
+- `pip install jxmlease`
+
+
+### 4. Create ansible user and ssh keys
 
 - `useradd -m -s /bin/bash ansible`
 
@@ -27,6 +36,6 @@
 - `ssh-keygen -t rsa` <-- No passphrase
 
 
-### 4. Clone ansible-examples repository
+### 5. Clone ansible-examples repository
 
 - `git clone https://github.com/sonicweaponized/ansible-examples.git`
