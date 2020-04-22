@@ -28,7 +28,7 @@
 
 - When prompted enter the password for the user that you created when initially setting up the target machine.
 
-- Your output should be:
+- Your output should be similar to:
 
 ```
 ansible@ansible-test:~/ansible-examples$ ansible-playbook linux_deploy-ssh.yml --ask-pass --ask-become-pass
