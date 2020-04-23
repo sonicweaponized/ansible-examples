@@ -47,7 +47,7 @@
 
 - `cd /etc/telegraf`
 
-- `mv telegraph.conf telegraph.conf.orig`
+- `mv telegraf.conf telegraf.conf.orig`
 
 - `vi telegraph.conf`
 
