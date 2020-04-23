@@ -11,7 +11,7 @@
 
 - In line `sw1-server ansible_host=XXX.XXX.XXX.XXX`, replace `XXX.XXX.XXX.XXX` with the ip of your second juniper switch.  If you do not have a second switch, you can delete this line.
 
-- You can also change the name `sw1` and `sw1-server` to whatever you desire. `foo` or `bar` for example. If you do this, also make sure to change the name under the [juniper_ex2200] group to match.
+- You can also change the name `sw1` and `sw1-server` to whatever you desire. `foo` or `bar` for example. If you do this, also make sure to change the name under the `[juniper_ex2200]` group to match.
 
 
 ### 2. Modify `juniper_config_syslog.set`
