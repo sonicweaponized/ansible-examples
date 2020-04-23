@@ -49,7 +49,7 @@
 
 - `mv telegraf.conf telegraf.conf.orig`
 
-- `vi telegraph.conf`
+- `vi telegraf.conf`
 
 - Paste the following into telegraph.conf:
 
