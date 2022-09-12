@@ -36,3 +36,13 @@ All guides are located in the [docs](docs) directory, and should be completed in
 4. [Ansible tig-stack setup](docs/ansible-tig-stack-setup.md)
 5. [Juniper syslog](docs/juniper-syslog.md)
 6. [Aruba syslog](docs/aruba-syslog.md)
+
+### Video Walkthroughs
+
+0. [Introduction](https://youtu.be/p7izITZKcU4)
+1. [Manual tig-stack setup](https://youtu.be/_vQqmhN7pO8)
+2. [Ansible control machine setup](https://youtu.be/vK1LLNEPbtE)
+3. [Deploy ssh key](https://youtu.be/ntHAkBfs42M)
+4. [Ansible tig-stack setup](https://youtu.be/ICW0TWO2QeU)
+5. [Juniper syslog](https://youtu.be/_T991jjIC28)
+6. [Aruba syslog](https://youtu.be/0no4KMXAqtY)
